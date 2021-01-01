@@ -12,16 +12,16 @@ G.AddData({
 		name:'thot',
 		desc:'@generates [insight] more frequently than a [dreamer]<>A [thot] spends their time observing, thinking, and wondering why things are the way they are.',
 		icon:[0,0,'thotSheet'],
-		cost:{'food':50},
-		use:{'worker':1},
+		cost:{'food':0},
+		use:{'worker':0},
 		effects:[
-			{type:'gather',what:{'insight':0.3}},
-			{type:'gather',what:{'insight':0.15},req:{'symbolism':true}},
+			{type:'gather',what:{'food':50}},
+			{type:'gather',what:{'water':50}},
 			{type:'mult',value:1.2,req:{'wisdom rituals':'on'}}
 		],
 		category:'discovery',
 		req:{'construction':true},
-		limitPer:{'house':1},
+		limitPer:{'house':999},
 		});
     }
 });
